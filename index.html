@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>IPL </title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+     <!-- header section -->
+    <div class="header">
+      <div class="nav">
+          <h2 class="logo">IPL_Demo</h2>
+          <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="#teamCard">teamcard</a></li>
+             <li><a href="player.html">playercard</a></li>
+             <li><input type="search" name="Search" id="Search" placeholder="Search.."></li>
+          </ul>
+      </div>
+  </div>
+  
+ 
+ <div class="btn-div">
+  <button class="learn-more submit" class="add" id="add" >
+      <span class="circle" aria-hidden="true">
+          <span class="icon arrow"></span>
+      </span>
+      <span class="button-text">Add Team </span>
+  </button>
+</div>
+  
+  <!-- homepage  -->
+  <section class="sec">
+    <div class="content">
+        <div class="textBox">
+            <h2>Thank you</h2>
+            <p>This is a only for showing</p>
+            <a href="player.html">Show the Data</a>
+        </div>
+        <div class="imgBox">
+            <img src="/chennai-super-kings-logo-F4EBD1F5A6-seeklogo.com.png" alt="" class="logo">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="/ipl-mumbai-indians-logo-5FD6E24965-seeklogo.com.png" alt="" onclick="imgSlider('ipl-mumbai-indians-logo-5FD6E24965-seeklogo.com.png');changeBgColor('#0062be')"></li>
+        <li><img src="/chennai-super-kings-logo-F4EBD1F5A6-seeklogo.com.png" onclick="imgSlider('/chennai-super-kings-logo-F4EBD1F5A6-seeklogo.com.png');changeBgColor('#D1AB3E')"></li>
+        <li><img src="/gujarat-titans-ipl-logo-6962504B75-seeklogo.com.png" onclick="imgSlider('/gujarat-titans-ipl-logo-6962504B75-seeklogo.com.png');changeBgColor('#8C411E')"></li>
+        <li><img src="/ipl-deccan-chargers-logo-8BA14B44F2-seeklogo.com.png" onclick="imgSlider('/ipl-deccan-chargers-logo-8BA14B44F2-seeklogo.com.png');changeBgColor('#021B3A')"></li>
+        <li><img src="/ipl-kolkata-knight-riders-logo-23993E9646-seeklogo.com.jpg" onclick="imgSlider('/ipl-kolkata-knight-riders-logo-23993E9646-seeklogo.com.jpg');changeBgColor('#f6f6f6')"></li>
+        <li><img src="/ipl-rajasthan-royals-logo-F69DDCEF15-seeklogo.com.png" onclick="imgSlider('/ipl-rajasthan-royals-logo-F69DDCEF15-seeklogo.com.png');changeBgColor('#CBA92B')"></li>
+       
+ 
+    </ul>
+</section>
+
+
+    <!-- popup form -->
+    <div class="popup">
+    <div class="team">
+      <div class="close-btn">&times;</div>
+        <form action="javascript:;" class="form">
+          
+          <div class="form-element">
+            <label for="name">Name :</label>
+            <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Team Name"
+            aria-required="true"
+          />
+        </div>
+          
+          <div class="form-element">
+            <label for="icon">LOGO:</label>
+            <input
+            type="text"
+            name="icon"
+            id="icon"
+            placeholder="Team Icon"
+            aria-required="false"
+          />
+        </div>
+          
+          <div class="form-element">
+            <label for="playerCount">playerCount:</label>
+            <input
+            type="number"
+            name="playerCount"
+            id="playerCount"
+            placeholder="Player Count"
+            aria-required="true"
+          />
+        </div>
+          
+          <div class="form-element">
+            <label for="topBowler">Bowler:</label>
+            <input
+            type="number"
+            name="topBowler"
+            id="topBowler"
+            placeholder="Top Bowler"
+            aria-required="true"
+          />
+        </div>
+          <div class="form-element">
+            <label for="topBatsman">Batsman:</label>
+            <input
+            type="number"
+            name="topBatsman"
+            id="topBatsman"
+            placeholder="Top Batsman"
+            aria-required="true"
+          />
+        </div>
+          <div class="form-element">
+            <label for="wonCount">Winning Match:</label>
+            <input
+            type="number"
+            name="wonCount"
+            id="wonCount"
+            placeholder="wonCount"
+            aria-required="true"
+          />
+        </div>
+        </form>
+        <div class="buttons">
+          <button onclick="createItem()">create </button>
+        </div>
+      </div>
+    </div>
+        <div id="teamCard" class="TEAM">
+          <table class="table">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
